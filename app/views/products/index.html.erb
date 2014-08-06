@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<body bgcolor="#9C2662">
+	<table id="bagtable" width="999"  height="900" border="0" bgcolor="#FFFFFF" align="center">
+		<tr>
+			<td valign="top">
+			<td width="1053" height="110" valign="top"><%= link_to (image_tag "logo.PNG", :title => "Logo")  %>
+<div style="float:right; margin-right:auto;">
+
+<table width="700" height="25" border="0"  valign="right">
+
+
+<tr>
+<td valign="left">
+	
+<%= form_tag products_path, :method => 'get' do %>
+<p>
+<%= text_field_tag :search, params[:search], :placeholder => "Category name" %>
+<%= submit_tag "Search",  :name => nil  %>
+</p>
+<% end %>	
+</td>
+
+<td valign="center">
+<%= form_tag products_path, :method => 'get' do %>
+<p>
+<%= text_field_tag :search, params[:search], :placeholder => "Product name", :hidden => 'none' %>
+<%= submit_tag "Search",  :name => nil  %>
+</p>
+<% end %>	
+</td>
+
+<td valign="right">
+<%= form_tag products_path, :method => 'get' do %>
+<p>
+<%= text_field_tag :search, params[:search], :placeholder => "Barcode" %>
+<%= submit_tag "Search",  :name => nil  %>
+</p>
+<% end %>	
+
+
+
+</td>
+
+<td valign="right">
+<%= form_tag products_path, :method => 'get' do %>
+<p>
+<%= text_field_tag :search, params[:search], :placeholder => "Image" %>
+<%= submit_tag "Search",  :name => nil  %>
+</p>
+<% end %>	
+
+
+
+</td>
+</tr>
+
+
+
+
+
+
+			
+			
+	
+
+
+
+
+
+<span class="style17"><span class="style18"></span></span>	</div>
+
+				<table width="950" height="289" border="0" >
+					<tr>
+						<td width="150" valign="top">
+							
+		 
+						</td>
+						<td width="800" height="250">
+		
+						<center>
+							<table width=85%  BGCOLOR="#000000"">
+								<tr>
+									<td>
+										<td width="900" height="50"> 
+										
+										
+									
+											<center>
+												<h2 class="style15"><div class="style1 blok"><strong>Product Details </strong></h2>
+												
+										    </center>
+
+
+
+
+
+
+
+			
+
+
+<table width="1074" border="2">
+  <tr>
+    <th width="116">Category name</th>
+    <th width="149">Product name</th>
+    <th width="96">Product price</th>
+    <th width="68">List price</th>
+    <th width="50">Image</th>
+    <th width="58">Quantity</th>
+    <th width="93">Description</th>
+    <th width="135">Brief description</th>
+    <th width="69">Offer date</th>
+    <th width="66">Discounts</th>
+   
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.category_name %></td>
+    <td><%= product.product_name %></td>
+    <td><%= product.product_price %></td>
+    <td><%= product.list_price %></td>
+     <td><%= product.image %></td>
+    <td><%= product.quantity %></td>
+    <td><%= product.description %></td>
+    <td><%= product.brief_description %></td>
+    <td><%= product.offer_date %></td>
+    <td><%= product.discounts %></td>
+    <td><%= link_to 'Show', product, class: "btn btn-small btn-default" %></td>
+    <td><%= link_to 'Edit', edit_product_path(product), class: "btn btn-small btn-default" %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+
+
+											
+										
+									</td>
+								</tr>
+							</table>
+						</center>
+					</td>
+  
+
+					<table>	  
+						<tr>
+							<td>
+								<table width="800" border="0">
+									<tr>
+							
+									</tr> 
+									
+								</table>
+							</td>
+						</tr>
+					</table>
+	 </br>
+	 </br>
+	 </br>
+	 </br>
+	 <center>
+ <%= link_to 'Add New Product', new_product_path, class: "btn btn-large btn-primary"  %> </center>
+
+
+ 
+
+
+	 </br>
+	 </br>
+	 </br>
+
+	
+
+					<center>
+					<div class="copyright">
+					Copyright &copy; 
+					<a href="http://www.onevega.com" class="white">Onevega</a> 
+					2013. All rights reserved.
+					</div>
+					</center>
+
+			</tr>
+ 
+	</table>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

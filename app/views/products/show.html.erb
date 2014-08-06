@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<body bgcolor="#9C2662">
+	<table id="bagtable" width="999"  height="900" border="0" bgcolor="#FFFFFF" align="center">
+		<tr>
+			<td valign="top">
+			<td width="1053" height="110" valign="top"><%= link_to (image_tag "logo.PNG", :title => "Logo")  %>
+<div style="float:right; margin-right:auto;">
+
+	
+						
+			
+			
+		
+<span class="style17"><span class="style18"></span></span>	</div>
+
+				<table width="950" height="289" border="0" >
+					<tr>
+						<td width="150" valign="top">
+							
+		 
+						</td>
+						<td width="800" height="250">
+		
+						<center>
+							<table width=85%  BGCOLOR="#000000"">
+								<tr>
+									<td>
+										<td width="900" height="50"> 
+										
+									<!--	<marquee behavior="alternate"> 
+											<%= link_to (image_tag "baners.PNG", :title => "baner")%>
+										</marquee> -->
+									
+											<center>
+												<h2 class="style15"><div class="style1 blok"><strong>Product Details </strong></h2>
+												
+										    </center>
+
+
+<p id="notice"><%= notice %></p>
+
+
+<%= image_tag @product.image.url.to_s %>
+
+<p>
+  <b>Category name:</b>
+  <%= @product.category_name %>
+</p>
+
+<p>
+  <b>Product name:</b>
+  <%= @product.product_name %>
+</p>
+
+<p>
+  <b>Product price:</b>
+  <%= @product.product_price %>
+</p>
+
+<p>
+  <b>List price:</b>
+  <%= @product.list_price %>
+</p>
+
+<p>
+ 
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @product.quantity %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @product.description %> 
+</p>
+
+<p>
+  <b>Product is in:</b>
+  <%= @product.brief_description %>
+</p>
+
+<p>
+  <b>Offer date:</b>
+  <%= @product.offer_date %>
+</p>
+
+<p>
+  <b>Discounts:</b>
+  <%= @product.discounts %>
+</p>
+
+<p>
+  <b>Barcode:</b>
+  <%= @product.barcode %>
+</p>
+
+<button> <%= link_to 'Edit', edit_product_path(@product) %> </button> <br>
+<button> <%=  link_to 'See The Whole Product List', products_path %> </button>
+
+
+
+
+											
+										
+									</td>
+								</tr>
+							</table>
+						</center>
+					</td>
+  
+
+					<table>	  
+						<tr>
+							<td>
+								<table width="800" border="0">
+									<tr>
+							
+									</tr> 
+									
+								</table>
+							</td>
+						</tr>
+					</table>
+	 
+					<center>
+					<div class="copyright">
+					Copyright &copy; 
+					<a href="http://www.onevega.com" class="white">Onevega</a> 
+					2013. All rights reserved.
+					</div>
+					</center>
+
+			</tr>
+ 
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<body bgcolor="#9C2662">
+	<table id="bagtable" width="999"  height="900" border="0" bgcolor="#FFFFFF" align="center">
+		<tr>
+			<td valign="top">
+			<td width="1053" height="110" valign="top"><%= link_to (image_tag "logo.PNG", :title => "Logo")  %>
+			<div style="float:right; margin-right:auto;"><span class="style17"><span class="style18"></span></span>	</div>
+
+				<table width="950" height="289" border="0" >
+					<tr>
+						<td width="150" valign="top">
+							
+		 
+						</td>
+						<td width="800" height="250">
+		
+						<center>
+							<table width=85%  BGCOLOR="#000000"">
+								<tr>
+									<td>
+										<td width="900" height="50"> 
+										<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Store name:</b>
+  <%= @store.store_name %>
+</p>
+
+<p>
+  <b>Store url:</b>
+  <%= @store.store_url %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @store.area %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @store.location %>
+</p>
+
+<p>
+  <b>Latitude</b>
+  <%= @store.latitude %>
+</p>
+
+<p>
+  <b>longitude</b>
+  <%= @store.longitude %>
+</p>
+
+</br>
+
+<h3>Nearby Locations</h3>
+<ul>
+<%for store in @store.nearbys(10)%>
+<li><%= link_to store.location, store %> (<%= store.distance %> miles)</li>
+
+
+<% end %>
+</ul>
+</br>
+
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@store.latitude}%2C#{@store.longitude}" %>
+
+</br>
+<h4> To get Directions click on google map image
+</h4>
+<%= link_to (image_tag "Google-Maps-icon.png", :title => "Go For Maps"), "https://maps.google.co.in/maps?hl=en&tab=wl", :target=>"_blank"   %>
+
+	  
+
+
+</br>
+</br>
+</br>
+
+<%= link_to 'Edit', edit_store_path(@store) %> |
+<%= link_to 'Back', stores_path %>
+
+
+										
+									
+											
+									
+											
+											</div>
+
+										
+									
+
+							<!--		<%= link_to 'Back', stores_path %> -->
+
+									
+									
+									
+									
+									
+									
+									</td>
+								</tr>
+							</table>
+						</center>
+					</td>
+  
+
+					<table>	  
+						<tr>
+							<td>
+								<table width="800" border="0">
+									<tr>
+							
+									</tr> 
+									
+								</table>
+							</td>
+						</tr>
+					</table>
+
+
+
+		</br>			
+	 
+					<center>
+					<div class="copyright">
+					Copyright &copy; 
+					<a href="http://www.onevega.com" class="white">Onevega</a> 
+					2013. All rights reserved.
+					</div>
+					</center>
+
+			</tr>
+ 
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

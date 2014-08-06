@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta name="description" content="">
+ <meta name="author" content="">
+
+   
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+   
+
+
+<style>
+c:hover
+{
+background-color:orange;
+}
+
+
+divv
+{
+width:100px;
+height:100px;
+background:white;
+position:relative;
+animation-name:mymove;
+animation-duration:2s;
+
+/* Safari and Chrome */
+-webkit-animation-name:mymove;
+-webkit-animation-duration:0s;
+}
+
+@keyframes mymove
+{
+from {left:0px;}
+to {left:200px;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+from {left:0px;}
+to {left:200px;}
+}
+
+
+.style1 {color: #FF0000}
+
+$('.carousel').carousel({
+  interval: 100
+})
+
+
+</style>
+</head>
+
+<body>
+<table id="maintable" width="999"  height="363" border="0"  bgcolor="#6F0000" align="center">
+  <tr>
+    <td>
+	
+<div class="container">
+<header class="header">
+<div class="row">
+	<h1 class="span6"><a href="index.html" title="bootstrap free business website template">
+	<%= link_to (image_tag "logo.PNG", :title => "secrh")%> </a></h1>
+	
+	
+	
+
+
+	<div class="span6"><div class="pull-right"><br/> <a class="pull-right" href="mailto: info@bootstrappage.com"><small> E: www.onevega.com</small></a><strong><small> <br/> <c>Call (24/7) :  1234567894 </c></small></strong></div></div>
+</div>
+
+</header>
+
+  <!-- Navbar
+    ================================================== -->
+  <!-- ======================================================================================================================== -->
+
+ 
+<div id="myCarousel" class="carousel slide homCar">
+		<div class="carousel-inner" style="border-top:0px solid #222; border-bottom:0px solid #222; border-radius:14px;">
+		  <div class="item active">
+			<!-- <img src="assets/bbaner.PNG" alt="#" style="min-height:250px; min-width:100%"/> -->
+			<%= link_to (image_tag "1.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+			<span class="style1">	<h4> <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();">Worth to shop with coupons </marquee>  <h4> <span>
+				 
+			</div>
+		  </div>
+
+					
+
+
+		  <div class="item ">
+			<%= link_to (image_tag "2.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>Best deals in coupons  </h4>
+				  
+			</div>
+		  </div>
+		  <div class="item">
+				<%= link_to (image_tag "3.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  
+			</div>
+		  </div>
+
+			<div class="item">
+				<%= link_to (image_tag "4.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  
+			</div>
+		  </div>
+
+		  <div class="item">
+				<%= link_to (image_tag "5.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  
+			</div>
+		  </div>
+
+		  <div class="item">
+				<%= link_to (image_tag "6.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  
+			</div>
+		  </div>
+
+		  <div class="item">
+				<%= link_to (image_tag "7.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  
+			</div>
+		  </div>
+
+		  <div class="item">
+				<%= link_to (image_tag "8.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  
+			</div>
+		  </div>
+
+		  <div class="item">
+				<%= link_to (image_tag "9.PNG", :title => "secrh")%> 
+			<div class="carousel-caption">
+				  <h4>Limited offers  </h4>
+				  
+			</div>
+		  </div>
+
+
+
+
+		</div>
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+</div>
+
+
+<div class="row" style="text-align:center" >
+<div class="span2">
+<div class="well well-small" >
+<h4> 
+   Coupons 
+</h4>
+<a href="details.html"><small> view details </small></a>
+</div>
+</div>
+</a>
+	
+<div class="span2">
+<div class="well well-small">
+<h4>Bags </h4>
+ <%= link_to "view details", bags_path %> 
+</div>
+</div>
+			
+<div class="span2">
+<div class="well well-small">
+<h4>Womenswear </h4>
+<%= link_to "view details", womenjersey_path %>
+</div>
+</div>
+			
+<div class="span2">
+<div class="well well-small">
+<h4>Categories</h4>
+<%= link_to "view details", categories_path %>
+</div>
+</div>
+			
+			
+<div class="span2">
+<div class="well well-small">
+<h4>Stores</h4>
+<%= link_to "view details", storenew_path %>
+</div>
+</div>
+			
+			
+<div class="span2">
+<div class="well well-small">
+<h4>Menswear </h4>
+<%= link_to "view details", menjersey_path %>
+</div>
+</div>
+</div>
+
+
+
+    
+	
+	
+	
+	    <marquee direction="left" color="red">
+		<em> <span class="style1">
+		" Offers are available only from and till to particular dates, Hurry up!!!  </span>
+		<strong>-Coupons</strong> 
+		
+		    </em>
+        </marquee>
+
+	 <hr class="soften"/>
+	
+ 
+<!-- <marquee direction="right" onmouseover="this.stop();" onmouseout="this.start();"> -->
+
+<div class="row">
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center"> New Products</h3>	
+	<%= link_to (image_tag "bag2.PNG", :title => "HandBags" ) , bags_path ,   id: "logo" %>
+	<div class="caption">
+	<h5> Your Website represents you</h5>	
+	<p> <a>
+We are helping you to buy Coupons online..  </a>
+	</p>
+	<a class="pull-right" href="#"></a>
+	<br/>
+	</div>
+	</div>
+	</div>
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center">Book Coupons</h3>	
+<%= link_to (image_tag "bag4.PNG", :title => "HandBags" ) , books_path ,   id: "logo" %>
+
+	<div class="caption">
+	<h5> For any online activities</h5>	
+	<p>
+	
+We are helping you to buy Coupons online.. 
+	</p>
+	<a class="pull-right" href="#"></a>
+	<br/>
+	</div>
+	</div>
+	</div>
+	<div class="span4">
+	<div class="thumbnail">
+	<h3 style="text-align:center">Feature Coupons</h3>	
+	<%= link_to (image_tag "bag3.PNG", :title => "secrh")%> 
+	<div class="caption">
+	<h5>Drive your business in the fast track</h5>	
+	<p>
+	
+We are helping you to buy Coupons online.. 
+	</p>
+	<a class="pull-right" href="#"></a>
+	<br/>
+	</div>
+	</div>
+	</div>
+</div>
+</marquee> 
+<hr/>
+<div class="row">
+	<div class="span6">
+	<div class="well well-small">
+		<h3> What We Do !</h3>	
+		<p>
+		FreeIndiaCoupons.com is a community driven website where shoppers themselves contribute the coupons for other shoppers to save money. We at FreeIndiaCoupons.com validate every coupon submitted by the users and make sure the coupons are working.
+		
+		<br/><br/> In this fast moving&nbsp;eCommerce&nbsp;market, never miss an offer, or let the coupon expire, For latest updated coupons   subscribe to our email newletter to get latest coupons in your email everyday.<br/>
+		</p>
+	</div>
+	</div>
+	<div class="span6">
+	<div class="well well-small">
+		<h3> Customers and Vendors</h3>
+		<h5>Our aim is simple</h5>	
+		<p>
+		"To provide affordable Coupons and discounts for different stuff is our main goal."
+		</p>
+		<strong> Coupon Selling Process:</strong>	
+		<p>
+		It is very simple process to upload your Coupons . Create an account and upload your Coupons. 
+		It will be published on the website, You can track your online activity yourself.
+		
+		</p>
+		
+	</div>
+	</div>
+	
+	
+</div>
+<!-- Footer
+      ==================================================
+<hr class="soften"/>
+
+ -->
+<footer class="footer">
+<p>
+	<span class="pull-right">
+
+	 <%= link_to (image_tag "fb3.PNG", :title => "secrh"), href=" https://www.facebook.com" , :target=>"_blank"%> 
+     <%= link_to (image_tag "tw.PNG", :title => "secrh") , href="https://twitter.com", :target=>"_blank"  %>
+     <%= link_to (image_tag "gplus1.png", :title => "secrh"),  href="https://plus.google.com/", :target=>"_blank"%>
+	 <%= link_to (image_tag "ld.png", :title => "secrh"),  href="https://linkedin.com/", :target=>"_blank"  %>
+	 
+	</span>
+<%= link_to "Home", home_path %>-
+
+<%= link_to "Who we are", about_path %> - 
+
+<%= link_to "What we do?", home_path %>-
+
+<c><%= link_to "Support",   new_path %> </c>
+
+</p>
+<hr class="soften"/>
+
+<p>&copy;  <a href="http://www.onevega.com" class="white">Onevega</a> 
+					2014. All rights reserved.<br/><br/></p> 
+
+
+
+ </footer>
+</div><!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	</style>
+  
+	
+	
+	
+	</td>
+  </tr>
+</table>
+
+</body>
+</html>
